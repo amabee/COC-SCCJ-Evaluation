@@ -12,7 +12,6 @@ namespace COC_SCCJ_Evaluation.Models
     public class QuestionModel
     {
 
-        private int id;
         private int categoryId;
         private bool hasImage;
         private bool imageUri;
@@ -24,8 +23,8 @@ namespace COC_SCCJ_Evaluation.Models
         private string option4;
 
         // PROPS
-        [DisplayName("Question ID")]
-        public int Id { get => id; set => id = value; }
+        [DisplayName("Category")]
+        [Required(ErrorMessage = "Please Select a Category")]
         public int CategoryId { get => categoryId; set => categoryId = value; }
         public bool HasImage { get => hasImage; set => hasImage = value; }
 

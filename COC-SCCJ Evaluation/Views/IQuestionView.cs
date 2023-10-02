@@ -10,7 +10,6 @@ namespace COC_SCCJ_Evaluation.Views
     public interface IQuestionView
     {
         // PROPS FIELDS
-        string QuestionId { get; set; }
 
         string CategoryId { get; set; }
 

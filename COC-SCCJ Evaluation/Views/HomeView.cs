@@ -135,7 +135,6 @@ namespace COC_SCCJ_Evaluation.Views
         public event EventHandler SaveEvent;
         public event EventHandler CancelEvent;
         // PROPS
-        public string QuestionId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string CategoryId { get => categoryId; set => categoryId = value; }
         public bool HasImage { get => hasImage; set => hasImage = value; }
         public string ImageUri { get => imageUri; set => imageUri = value; }
