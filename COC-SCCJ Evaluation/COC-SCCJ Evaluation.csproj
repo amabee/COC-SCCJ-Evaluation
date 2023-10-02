@@ -136,7 +136,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Custom_Controls\" />
     <Folder Include="Presenters\" />
   </ItemGroup>
   <ItemGroup>
