@@ -97,17 +97,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\IQuestionRepository.cs" />
     <Compile Include="Models\QuestionModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\IQuestionView.cs" />
-    <Compile Include="Views\HomeView.cs">
+    <Compile Include="Views\AdminView\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HomeView.Designer.cs">
+    <Compile Include="Views\AdminView\AdminView.Designer.cs">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacultyView\IQuestionView.cs" />
+    <Compile Include="Views\FacultyView\HomeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FacultyView\HomeView.Designer.cs">
       <DependentUpon>HomeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,8 +139,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\HomeView.resx">
+    <EmbeddedResource Include="Views\AdminView\AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FacultyView\HomeView.resx">
       <DependentUpon>HomeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -167,6 +194,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medal_512px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_20231007_014740_0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_shield_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_shield_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_shield_96px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_480px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

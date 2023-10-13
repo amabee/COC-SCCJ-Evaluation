@@ -139,7 +139,7 @@ namespace COC_SCCJ_Evaluation.Views
         public bool HasImage { get => hasImage; set => hasImage = value; }
         public string ImageUri { get => imageUri; set => imageUri = value; }
         public string Question { get => txtQuestion.Text; set => txtQuestion.Text = value; }
-        public string Answer { get => txtAnswer.Text; set => txtAnswer.Text = value; }
+        public string Answer { get => txtAnswers.Text; set => txtAnswers.Text = value; }
         public string Option1 { get => txtOption1.Text; set => txtOption1.Text = value; }
         public string Option2 { get => txtOption2.Text; set => txtOption2.Text = value; }
         public string Option3 { get => txtOption3.Text; set => txtOption3.Text = value; }
@@ -157,7 +157,7 @@ namespace COC_SCCJ_Evaluation.Views
         private void answer1_CheckedChanged(object sender, EventArgs e)
         {
             if (answer1.Checked) {                
-                txtAnswer.Text = txtOption1.Text;
+                txtAnswers.Text = txtOption1.Text;
             }
         }
 
@@ -165,15 +165,15 @@ namespace COC_SCCJ_Evaluation.Views
         {
             if (answer2.Checked)
             {
-                txtAnswer.Text = txtOption2.Text;
+                txtAnswers.Text = txtOption2.Text;
             }
         }
 
         private void answer3_CheckedChanged(object sender, EventArgs e)
         {
-            if (answer2.Checked)
+            if (answer3.Checked)
             {
-                txtAnswer.Text = txtOption2.Text;
+                txtAnswers.Text = txtOption2.Text;
             }
         }
 
@@ -181,7 +181,39 @@ namespace COC_SCCJ_Evaluation.Views
         {
             if (answer4.Checked)
             {
-                txtAnswer.Text = txtOption4.Text;
+                txtAnswers.Text = txtOption4.Text;
+            }
+        }
+
+        private void guna2TileButton4_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectTab(4);
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the OpenFileDialog class
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Set the filter to specify allowed file types
+            openFileDialog.Filter = "Text Files|*.txt|All Files|*.*";
+
+            // Set the initial directory (optional)
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            // Set the dialog title (optional)
+            openFileDialog.Title = "Select a File to Open";
+
+            // Show the dialog and check the result
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Get the selected file's path
+                string selectedFilePath = openFileDialog.FileName;
+
+                // You can now work with the selected file
+                // For example, display it in a TextBox
+                var text = System.IO.File.ReadAllText(selectedFilePath);
+                MessageBox.Show(text);
             }
         }
     }

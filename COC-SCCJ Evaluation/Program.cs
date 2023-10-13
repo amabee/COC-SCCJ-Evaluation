@@ -16,7 +16,7 @@ namespace COC_SCCJ_Evaluation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.HomeView());
+            Application.Run(new Views.AdminView());
         }
     }
 }

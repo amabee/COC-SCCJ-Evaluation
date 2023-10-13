@@ -38,3 +38,171 @@ C:\Users\User\source\repos\COC-SCCJ Evaluation\COC-SCCJ Evaluation\bin\Debug\Nev
 C:\Users\User\source\repos\COC-SCCJ Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.xml
 C:\Users\User\source\repos\COC-SCCJ Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.xml
 C:\Users\User\source\repos\COC-SCCJ Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe.config
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.pdb
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.UI2.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.dll
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.xml
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.HomeView.resources
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.exe
+C:\Users\User\Documents\GitHub\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.pdb
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe.config
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.pdb
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.UI2.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.dll
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.xml
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.AssemblyReference.cache
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Properties.Resources.resources
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.HomeView.resources
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.GenerateResource.cache
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CoreCompileInputs.cache
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CopyComplete
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.exe
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.pdb
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.LoginView.resources
+D:\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.ForgetPassword.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe.config
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.pdb
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.UI2.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.dll
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.AssemblyReference.cache
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.ForgetPassword.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Properties.Resources.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.AdminView.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.HomeView.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.LoginView.resources
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.GenerateResource.cache
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CoreCompileInputs.cache
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CopyComplete
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.exe
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.pdb
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe.config
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.exe
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\COC-SCCJ Evaluation.pdb
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.UI2.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.dll
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Guna.Charts.WinForms.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Barcode.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Chart.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Diagram.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.GraphicsGL.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Grid.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinBase.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.WinForm.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Host.Wpf.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Presentation.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Schedule.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.Text.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WinFormControls.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\Nevron.Nov.WpfControls.xml
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.AssemblyReference.cache
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.ForgetPassword.resources
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Properties.Resources.resources
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.AdminView.resources
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.HomeView.resources
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.Views.LoginView.resources
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.GenerateResource.cache
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CoreCompileInputs.cache
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.csproj.CopyComplete
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.exe
+D:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC-SCCJ Evaluation.pdb
