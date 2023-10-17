@@ -11,6 +11,7 @@ namespace COC_SCCJ_Evaluation.Views
     {
         // PROPS FIELDS
 
+        int QuestionId { get; set; }
         string CategoryId { get; set; }
 
         bool HasImage { get; set; }
@@ -31,7 +32,7 @@ namespace COC_SCCJ_Evaluation.Views
 
         string SearchValue { get; set; }
         bool IsEditable {  get; set; }
-        string IsSuccessful { get; set; }
+        bool IsSuccessful { get; set; }
         string Message { get; set; }
 
         // EVENTS

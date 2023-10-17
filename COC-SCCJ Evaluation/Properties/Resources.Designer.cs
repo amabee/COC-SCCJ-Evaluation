@@ -19,7 +19,7 @@ namespace COC_SCCJ_Evaluation.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -81,11 +81,11 @@ namespace COC_SCCJ_Evaluation.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Server=localhost;Database=cocfaculty_db;Uid=root;Pwd=&apos;&apos;;.
         /// </summary>
-        internal static string COC_IMAGE {
+        internal static string connectionString {
             get {
-                return ResourceManager.GetString("COC IMAGE", resourceCulture);
+                return ResourceManager.GetString("connectionString", resourceCulture);
             }
         }
         
@@ -155,6 +155,16 @@ namespace COC_SCCJ_Evaluation.Properties {
         internal static System.Drawing.Bitmap student_male_480px {
             get {
                 object obj = ResourceManager.GetObject("student_male_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_png_icon_young_user_icon_2400 {
+            get {
+                object obj = ResourceManager.GetObject("user-png-icon-young-user-icon-2400", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
