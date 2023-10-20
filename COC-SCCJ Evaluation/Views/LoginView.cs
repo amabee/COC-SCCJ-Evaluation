@@ -1,6 +1,5 @@
 ﻿using COC_SCCJ_Evaluation.Models;
-using COC_SCCJ_Evaluation.Presenter.FacultyPresenter;
-using COC_SCCJ_Evaluation.Repositories;
+
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -42,58 +41,6 @@ namespace COC_SCCJ_Evaluation.Views
             this.Controls.Add(forgetPassword);
             forgetPassword.BringToFront();
         }
-
-        //private async void btnLogin_Click(object sender, EventArgs e)
-        //{
-        //    string faculty_id = txtUsername.Text;
-        //    string password = txtPassword.Text;
-
-        //    using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
-        //    {
-        //        await connection.OpenAsync();
-
-        //        string query = "SELECT * FROM tbl_faculty_users WHERE faculty_id = @faculty_id AND password = @password AND isAdmin = 0";
-
-        //        using (MySqlCommand cmd = new MySqlCommand(query, connection))
-        //        {
-        //            cmd.Parameters.AddWithValue("@faculty_id", faculty_id);
-        //            cmd.Parameters.AddWithValue("@password", password);
-
-        //            using (MySqlDataReader reader = (MySqlDataReader)await cmd.ExecuteReaderAsync())
-        //            {
-        //                if (await reader.ReadAsync())
-        //                {
-        //                    string firstname = reader["faculty_firstname"].ToString();
-        //                    string lastname = reader["faculty_lastname"].ToString();
-        //                    SessionData.Firstname = firstname;
-        //                    SessionData.Lastname = lastname;
-        //                    SessionData.Username = txtUsername.Text;
-
-        //                    // Retrieve the image data from the database
-        //                    byte[] imageBytes = reader["faculty_Profileimage"] as byte[];
-
-        //                    if (imageBytes != null && imageBytes.Length > 0)
-        //                    {
-        //                        // Convert the binary image data to an Image
-        //                        using (MemoryStream ms = new MemoryStream(imageBytes))
-        //                        {
-        //                            SessionData.ProfileImage = Image.FromStream(ms);
-        //                        }
-        //                    }
-
-        //                    MessageBox.Show("Login successful!");
-        //                    DialogResult = DialogResult.OK;
-        //                    Close();
-        //                }
-        //                else
-        //                {
-        //                    // Failed login
-        //                    MessageBox.Show("Invalid credentials. Please try again.");
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
@@ -137,13 +84,19 @@ namespace COC_SCCJ_Evaluation.Views
                                 catch (ArgumentException ex)
                                 {
                                     // Handle the "Parameter is not valid" error
-                                    MessageBox.Show("Failed to load the profile image. Login successful, but the image could not be displayed.");
+                                    MessageBox.Show("Failed to load the profile image. Login successful, " +
+                                        "but the image could not be displayed. \nAdditional Error: " + ex.Message);
                                 }
                             }
 
                             MessageBox.Show("Login successful!");
-                            DialogResult = DialogResult.OK;
-                            Close();
+
+                           
+                            // Close the login form
+                            this.Hide();
+                            var home = new Views.HomeView();
+                            home.ShowDialog();
+                            this.Close();
                         }
                         else
                         {
@@ -155,5 +108,70 @@ namespace COC_SCCJ_Evaluation.Views
             }
         }
 
+        private async void guna2Button3_Click(object sender, EventArgs e)
+        {
+            string faculty_id = txtAdminUname.Text;
+            string password = txtAdminPass.Text;
+
+            using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = "SELECT * FROM tbl_faculty_users WHERE faculty_id = @faculty_id AND password = @password AND isAdmin = 1";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@faculty_id", faculty_id);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (MySqlDataReader reader = (MySqlDataReader)await cmd.ExecuteReaderAsync())
+                    {
+                        if (await reader.ReadAsync())
+                        {
+                            string firstname = reader["faculty_firstname"].ToString();
+                            string lastname = reader["faculty_lastname"].ToString();
+                            adminSessionData.Firstname = firstname;
+                            adminSessionData.Lastname = lastname;
+                            adminSessionData.Username = txtAdminUname.Text;
+
+                           
+                            byte[] imageBytes = reader["faculty_Profileimage"] as byte[];
+
+                            if (imageBytes != null && imageBytes.Length > 0)
+                            {
+                                try
+                                {
+                                   
+                                    using (MemoryStream ms = new MemoryStream(imageBytes))
+                                    {
+                                        adminSessionData.ProfileImage = Image.FromStream(ms);
+                                    }
+                                }
+                                catch (ArgumentException ex)
+                                {
+                                    
+                                    MessageBox.Show("Failed to load the profile image. Login successful, " +
+                                        "but the image could not be displayed. \nAdditional Error: " + ex.Message);
+                                }
+                            }
+
+                            MessageBox.Show("Login successful!");
+
+
+                           
+                            this.Hide();
+                            var admin = new Views.AdminView();
+                            admin.ShowDialog();
+                            this.Close();
+                        }
+                        else
+                        {
+                           
+                            MessageBox.Show("Invalid credentials. Please try again.");
+                        }
+                    }
+                }
+            }
+        }
     }
 }

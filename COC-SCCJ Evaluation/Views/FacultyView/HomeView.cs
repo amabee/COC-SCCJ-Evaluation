@@ -1,6 +1,4 @@
 ﻿using COC_SCCJ_Evaluation.Models;
-using COC_SCCJ_Evaluation.Presenter.FacultyPresenter;
-using COC_SCCJ_Evaluation.Repositories;
 using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
 using System;
@@ -17,7 +15,7 @@ using System.Windows.Forms;
 
 namespace COC_SCCJ_Evaluation.Views
 {
-    public partial class HomeView : Form, IQuestionView
+    public partial class HomeView : Form
     {
         
 
@@ -29,33 +27,21 @@ namespace COC_SCCJ_Evaluation.Views
             Resize += HomeView_Resize_1;
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint | ControlStyles.SupportsTransparentBackColor, true);
 
-            AssociateAndRaiseViewEvents();
+        }
+
+
+        private void HomeView_Load(object sender, EventArgs e)
+        {
+            LoadDataIntoDataGridView();
             GetAllCategories();
 
-            
-            lblName.Text = SessionData.Firstname + " " +SessionData.Lastname;
+
+            lblName.Text = SessionData.Firstname + " " + SessionData.Lastname;
             lblUsername.Text = SessionData.Username;
             ProfilePicture.Image = SessionData.ProfileImage;
 
-
+            btnTourneySave.Visible = false;
         }
-
-
-
-        private void AssociateAndRaiseViewEvents()
-        {
-            btnTestSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
-            txtTestSearch.KeyDown += (s, e) =>
-            {
-                if (e.KeyCode == Keys.Enter)
-                {
-                    SearchEvent?.Invoke(this, EventArgs.Empty);
-                }
-            };
-            
-        }
-
-
 
         private void closeButton_Click(object sender, EventArgs e)
         {
@@ -131,13 +117,6 @@ namespace COC_SCCJ_Evaluation.Views
         }
 
         private int minimumWidth = 1000;
-        private string message;
-        private bool isSuccessful;
-        private bool isEditable;
-        private string imageUri;
-        private bool hasImage;
-        private string categoryId;
-        private int questionId;
 
         private void answer1_CheckedChanged(object sender, EventArgs e)
         {
@@ -192,38 +171,11 @@ namespace COC_SCCJ_Evaluation.Views
             }
         }
 
-
-        public event EventHandler SearchEvent;
-        public event EventHandler AddNewEvent;
-        public event EventHandler EditEvent;
-        public event EventHandler DeleteEvent;
-        public event EventHandler SaveEvent;
-        public event EventHandler CancelEvent;
-
-        #region PROPS
-        // PROPS
-
-        public int QuestionId { get => questionId; set => questionId = value; }
-        public string CategoryId { get => categoryId; set => categoryId = value; }
-        public bool HasImage { get => hasImage; set => hasImage = value; }
-        public string ImageUri { get => imageUri; set => imageUri = value; }
-        public string Question { get => txtQuestion.Text; set => txtQuestion.Text = value; }
-        public string Answer { get => txtAnswers.Text; set => txtAnswers.Text = value; }
-        public string Option1 { get => txtOption1.Text; set => txtOption1.Text = value; }
-        public string Option2 { get => txtOption2.Text; set => txtOption2.Text = value; }
-        public string Option3 { get => txtOption3.Text; set => txtOption3.Text = value; }
-        public string Option4 { get => txtOption4.Text; set => txtOption4.Text = value; }
-        public string SearchValue { get => txtTestSearch.Text; set => txtTestSearch.Text = value; }
-        public bool IsEditable { get => isEditable; set => isEditable = value; }
-        public bool IsSuccessful { get => isSuccessful; set => isSuccessful = value; }
-        public string Message { get => message; set => message = value; }
-
-        public void SetQuestionBindingSource(BindingSource questionList)
+        public void Alert(string msg, CustomAlertBox.CustomAlert.enmType type, string details)
         {
-            guna2DataGridView2.DataSource = questionList;
+            CustomAlertBox.CustomAlert frm = new CustomAlertBox.CustomAlert();
+            frm.showAlert(msg, type, details);
         }
-
-        #endregion
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -258,11 +210,14 @@ namespace COC_SCCJ_Evaluation.Views
                         cmd.ExecuteNonQuery();
                     }
 
-                    MessageBox.Show("Data inserted into the database.");
+
+                    this.Alert("Success", CustomAlertBox.CustomAlert.enmType.Success, "Your changes are saved successfully");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                   
+                    this.Alert("Error", CustomAlertBox.CustomAlert.enmType.Error, "Something went wrong!");
+                    MessageBox.Show("For detailed explanation of error, please refer to this: " + ex.Message);
                 }
             }
         }
@@ -355,7 +310,68 @@ namespace COC_SCCJ_Evaluation.Views
             }
         }
 
+        private void LoadDataIntoDataGridView()
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT * FROM tbl_questions";
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        questionDataGrid.DataSource = dataTable;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+        
+        private void challengeBtn_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectTab(5);
+        }
 
 
+        private string ColorToHex(Color color)
+        {
+            // Format the color as a hexadecimal string
+            return $"#{color.R:X2}{color.G:X2}{color.B:X2}";
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Color selectedColor = colorDialog1.Color;
+
+                string colorToHex = ColorToHex(selectedColor);
+
+                linkLblColor.Text = colorToHex;
+            }
+        }
+
+        private void txtEventType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboEventType.SelectedItem.ToString() == "BCS")
+            {
+                btnTourneySave.Visible = true;
+                btnTourneySave.SelectTab(0);
+            }
+
+            else if(comboEventType.SelectedItem.ToString() == "Challenge Room")
+            {
+                
+            }
+
+        }
     }
 }

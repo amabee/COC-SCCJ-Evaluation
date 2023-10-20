@@ -148,21 +148,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomAlertBox\CustomAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomAlertBox\CustomAlert.Designer.cs">
+      <DependentUpon>CustomAlert.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ForgetPassword.Designer.cs">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\FacultyModels\IQuestionRepository.cs" />
-    <Compile Include="Models\FacultyModels\QuestionModel.cs" />
+    <Compile Include="Models\adminSessionData.cs" />
     <Compile Include="Models\SessionData.cs" />
-    <Compile Include="Presenter\Common\ModelValidation.cs" />
-    <Compile Include="Presenter\FacultyPresenter\QuestionPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\BaseRepository.cs" />
-    <Compile Include="Repositories\QuestionRepository.cs" />
     <Compile Include="Views\AdminView\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +183,9 @@
     <Compile Include="Views\LoginView.Designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomAlertBox\CustomAlert.resx">
+      <DependentUpon>CustomAlert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,7 +223,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\AdminModels\" />
+    <None Include="Resources\icons8-x.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.jpg" />
@@ -268,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-png-icon-young-user-icon-2400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

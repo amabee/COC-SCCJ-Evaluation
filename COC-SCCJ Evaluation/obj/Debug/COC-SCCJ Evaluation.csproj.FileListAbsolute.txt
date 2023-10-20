@@ -268,3 +268,4 @@ E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\System.Memory.xml
 E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\System.Numerics.Vectors.xml
 E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\FILES\COC-SCCJ-Evaluation\COC-SCCJ Evaluation\obj\Debug\COC_SCCJ_Evaluation.CustomAlertBox.CustomAlert.resources

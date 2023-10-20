@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COC_SCCJ_Evaluation.Models;
 
 namespace COC_SCCJ_Evaluation.Views
 {
@@ -19,27 +20,39 @@ namespace COC_SCCJ_Evaluation.Views
         {
             InitializeComponent();
 
-            Faculty_DataGrid();
-            Evaluation_DataGrid();
-            inputValidation();
         }
 
+
+        public void Alert(string msg, CustomAlertBox.CustomAlert.enmType type, string details)
+        {
+            CustomAlertBox.CustomAlert frm = new CustomAlertBox.CustomAlert();
+            frm.showAlert(msg, type, details);
+        }
         private void Faculty_DataGrid() {
 
-            // Create a DataTable and add columns
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Faculty ID", typeof(string));
-            dt.Columns.Add("First Name", typeof(string));
-            dt.Columns.Add("Last Name", typeof(string));
-            dt.Columns.Add("Status", typeof(string));
-            
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
+                {
+                    connection.Open();
 
-            // Add rows to the DataTable
-            dt.Rows.Add("02-1920-03954", "John Paul", "Orencio", "Active");
-            dt.Rows.Add("02-2021-01611", "Shan", "Gorra", "Active");
-            dt.Rows.Add("02-1920-03045", "John Paul", "Orencio", "Active");
+                    string query = "SELECT `id`, `faculty_Id`, `faculty_firstname`, `faculty_lastname` FROM `tbl_faculty_users` WHERE isAdmin = 0";
 
-            guna2DataGridView1.DataSource = dt;
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        facultyDataGrid.DataSource = dataTable;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
         }
 
 
@@ -93,38 +106,6 @@ namespace COC_SCCJ_Evaluation.Views
             txtReEnterPass.Invalidate();
         }
 
-        //private void btnSaveFaculty_Click(object sender, EventArgs e)
-        //{
-        //    using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
-        //    {
-        //        connection.Open();
-
-        //        string insertQuery = "INSERT INTO `tbl_faculty_users`(`faculty_Id`, `faculty_firstname`, `faculty_lastname`, `password`, `faculty_Profileimage`, `isAdmin`) " +
-        //                            "VALUES (@FacultyID, @FirstName, @LastName, @Password, @ProfileImage, @isAdmin)";
-        //        using (MySqlCommand cmd = new MySqlCommand(insertQuery, connection))
-        //        {
-        //            cmd.Parameters.AddWithValue("@FacultyID", txtFacultyID.Text);
-        //            cmd.Parameters.AddWithValue("@FirstName", txtFacultyFname.Text);
-        //            cmd.Parameters.AddWithValue("@LastName", txtFacultyLname.Text);
-        //            cmd.Parameters.AddWithValue("@Password", txtReEnterPass.Text);
-        //            cmd.Parameters.AddWithValue("@isAdmin", 0);
-
-        //            // Convert and insert the image in a supported format (e.g., JPEG)
-        //            byte[] imageBytes;
-        //            using (Image image = Image.FromFile("path_to_image.jpg")) // Load the original image
-        //            using (MemoryStream ms = new MemoryStream())
-        //            {
-        //                image.Save(ms, ImageFormat.Jpeg); // Save it as JPEG
-        //                imageBytes = ms.ToArray();
-        //            }
-        //            cmd.Parameters.AddWithValue("@ProfileImage", imageBytes);
-
-        //            cmd.ExecuteNonQuery();
-        //        }
-        //    }
-
-        //}
-
         private void btnSaveFaculty_Click(object sender, EventArgs e)
         {
             using (MySqlConnection connection = new MySqlConnection(Properties.Resources.connectionString))
@@ -150,10 +131,20 @@ namespace COC_SCCJ_Evaluation.Views
                     }
 
                     cmd.ExecuteNonQuery();
+
+                    this.Alert("Success", CustomAlertBox.CustomAlert.enmType.Success, "Faculty User SuccessFully Added");
                 }
             }
         }
 
+        private void AdminView_Load(object sender, EventArgs e)
+        {
+            lblAdminUname.Text = adminSessionData.Firstname + " " + adminSessionData.Lastname;
+            ProfilePicture.Image = adminSessionData.ProfileImage;
 
+            Faculty_DataGrid();
+            Evaluation_DataGrid();
+            inputValidation();
+        }
     }
 }
